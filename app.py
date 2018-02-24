@@ -1,14 +1,7 @@
-"""
- Example program to show using an array to back a grid on-screen.
-
- Sample Python/Pygame Programs
- Simpson College Computer Science
- http://programarcadegames.com/
- http://simpson.edu/computer-science/
-
- Explanation video: http://youtu.be/mdTeqiWyFnc
-"""
 import pygame
+from random import *
+from util import *
+
 
 # Define some colors
 BLACK = (0, 0, 0)
@@ -40,6 +33,19 @@ for row in range(ROWS):
 # column numbers start at zero.)
 # grid[1][5] = 1
 
+#################
+# wall = -1
+# start = 1
+# goal = 2
+#
+
+#################
+
+# Build Maze
+buildMaze(grid)
+setStart(grid)
+setGoal(grid)
+
 # Initialize pygame
 pygame.init()
 
@@ -58,14 +64,6 @@ done = False
 clock = pygame.time.Clock()
 
 
-grid[10][10] = 9
-grid[11][10] = 9
-grid[12][10] = 9
-grid[13][10] = 9
-grid[14][10] = 9
-grid[15][10] = 9
-grid[16][10] = 9
-
 
 # -------- Main Program Loop -----------
 while not done:
@@ -79,7 +77,7 @@ while not done:
             column = pos[0] // (WIDTH + MARGIN)
             row = pos[1] // (HEIGHT + MARGIN)
             # Set that location to one
-            grid[row][column] = 1
+            # grid[row][column] = 1
             print("Click ", pos, "Grid coordinates: ", row, column)
 
     # Set the screen background
@@ -89,14 +87,20 @@ while not done:
     for row in range(ROWS):
         for column in range(COLS):
             color = WHITE
-            if grid[row][column] == 9:
+
+            if grid[row][column] == -1:
                 color = BLACK
-            pygame.draw.rect(screen,
-                             color,
-                             [(MARGIN + WIDTH) * column + MARGIN,
-                              (MARGIN + HEIGHT) * row + MARGIN,
-                              WIDTH,
-                              HEIGHT])
+            pygame.draw.rect(screen, color, [(MARGIN + WIDTH) * column + MARGIN,(MARGIN + HEIGHT) * row + MARGIN, WIDTH, HEIGHT])
+
+            if grid[row][column] == 1:
+                color = RED
+                pygame.draw.rect(screen, color,
+                                 [(MARGIN + WIDTH) * column + MARGIN, (MARGIN + HEIGHT) * row + MARGIN, WIDTH, HEIGHT])
+            if grid[row][column] == 2:
+                color = GREEN
+                pygame.draw.rect(screen, color,
+                                 [(MARGIN + WIDTH) * column + MARGIN, (MARGIN + HEIGHT) * row + MARGIN, WIDTH, HEIGHT])
+
 
     # Limit to 60 frames per second
     clock.tick(60)
