@@ -7,7 +7,7 @@ def buildMaze(board):
             if (random() < 0.7):
                 board[i][j] = 0
             else:
-                board[i][j] = -1
+                board[i][j] = 1
 
 def setStart(board):
     x = randint(0,len(board))
