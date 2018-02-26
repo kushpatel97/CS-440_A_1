@@ -6,9 +6,11 @@ import pygame
 class ForwardAStar:
 
 
-    def __init__(self, gridSize, screen):
+    def __init__(self, gridSize, screen, start_state, goal_state):
         self.gridSize = gridSize
         self.screen = screen
+        self.start_state = start_state
+        self.goal_state = goal_state
         self.f = {}
         self.h = None
         self.g = set()
@@ -18,26 +20,26 @@ class ForwardAStar:
     def manhattanDistance(self, a, b):
         return (abs(a[0] - b[0]) + abs(a[1] - b[1]))
 
-    def show_forwards_astar(self, array, start, goal):
+    def show_forwards_astar(self, array):
         neighbors = [(0, 1), (0, -1), (1, 0), (-1, 0)]
 
         close_set = set()
 
         came_from = {}
 
-        gscore = {start: 0}
+        gscore = {self.start_state: 0}
 
-        fscore = {start: self.manhattanDistance(start, goal)}
+        fscore = {self.start_state: self.manhattanDistance(self.start_state, self.goal_state)}
 
         oheap = []
 
-        heappush(oheap, (fscore[start], start))
+        heappush(oheap, (fscore[self.start_state], self.start_state))
 
         while oheap:
             # print(oheap)
             current = heappop(oheap)[1]
             # print(current)
-            if current == goal:
+            if current == self.goal_state:
                 total_path = []
 
                 while current in came_from:
@@ -59,7 +61,7 @@ class ForwardAStar:
                 tentative_g_score = gscore[current] + self.manhattanDistance(current, neighbor)
 
 
-                self.h = self.manhattanDistance(current, goal)
+                self.h = self.manhattanDistance(current, self.goal_state)
 
 
                 if 0 <= neighbor[0] < self.gridSize:
@@ -82,7 +84,7 @@ class ForwardAStar:
 
                     came_from[neighbor] = current
                     gscore[neighbor] = tentative_g_score
-                    fscore[neighbor] = tentative_g_score + self.manhattanDistance(neighbor, goal)
+                    fscore[neighbor] = tentative_g_score + self.manhattanDistance(neighbor, self.goal_state)
                     pygame.draw.rect(self.screen, BLUE,
                                      [(MARGIN + WIDTH) * neighbor[1] + MARGIN, (MARGIN + HEIGHT) * neighbor[0] + MARGIN,
                                       WIDTH, HEIGHT])
@@ -94,26 +96,26 @@ class ForwardAStar:
         return False
 
 
-    def show_backwards_astar(self, array, goal, start):
+    def show_backwards_astar(self, array):
         neighbors = [(0, 1), (0, -1), (1, 0), (-1, 0)]
 
         close_set = set()
 
         came_from = {}
 
-        gscore = {start: 0}
+        gscore = {self.goal_state: 0}
 
-        fscore = {start: self.manhattanDistance(start, goal)}
+        fscore = {self.goal_state: self.manhattanDistance(self.goal_state, self.start_state)}
 
         oheap = []
 
-        heappush(oheap, (fscore[start], start))
+        heappush(oheap, (fscore[self.goal_state], self.goal_state))
 
         while oheap:
             # print(oheap)
             current = heappop(oheap)[1]
             # print(current)
-            if current == goal:
+            if current == self.start_state:
                 total_path = []
 
                 while current in came_from:
@@ -135,7 +137,7 @@ class ForwardAStar:
                 tentative_g_score = gscore[current] + self.manhattanDistance(current, neighbor)
 
 
-                self.h = self.manhattanDistance(current, goal)
+                self.h = self.manhattanDistance(current, self.start_state)
 
 
                 if 0 <= neighbor[0] < self.gridSize:
@@ -158,7 +160,7 @@ class ForwardAStar:
 
                     came_from[neighbor] = current
                     gscore[neighbor] = tentative_g_score
-                    fscore[neighbor] = tentative_g_score + self.manhattanDistance(neighbor, goal)
+                    fscore[neighbor] = tentative_g_score + self.manhattanDistance(neighbor, self.start_state)
                     pygame.draw.rect(self.screen, BLUE,
                                      [(MARGIN + WIDTH) * neighbor[1] + MARGIN, (MARGIN + HEIGHT) * neighbor[0] + MARGIN,
                                       WIDTH, HEIGHT])

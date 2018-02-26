@@ -65,8 +65,9 @@ for row in range(ROWS):
 
 pygame.display.flip()
 
-regAstar = ForwardAStar(ROWS, screen)
-regAstar.show_forwards_astar(grid, start_state, goal_state)
+regAstar = ForwardAStar(ROWS, screen, start_state, goal_state)
+# regAstar.show_forwards_astar(grid)
+regAstar.show_backwards_astar(grid)
 
 print(regAstar.getCloseList())
 print(regAstar.getG())
