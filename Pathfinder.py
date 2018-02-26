@@ -17,30 +17,30 @@ from AStar import *
 #
 #
 # UNCOMMENT HERE FOR IT TO WORK
-ROWS = 50
-grid = generateGrid(ROWS)
-buildMaze(grid)
-grid[0][0] = 2
-start_state = (0, 0)
-grid[ROWS-1][ROWS-1] = -1
-goal_state = (ROWS-1, ROWS-1)
+# ROWS = 50
+# grid = generateGrid(ROWS)
+# buildMaze(grid)
+# grid[0][0] = 2
+# start_state = (0, 0)
+# grid[ROWS-1][ROWS-1] = -1
+# goal_state = (ROWS-1, ROWS-1)
 
 
 
 
 #
-# text_file = open('numbers2.txt', 'r')
-# lines = text_file.readlines()
-# grid = []
-# for line in lines:
-#     line = line.strip().split(',')
-#     line = list(map(int, line))
-#     grid.append(line)
-#
+text_file = open('numbers2.txt', 'r')
+lines = text_file.readlines()
+grid = []
+for line in lines:
+    line = line.strip().split(',')
+    line = list(map(int, line))
+    grid.append(line)
+
 # print(grid)
-# start_state = grid[0][0]
-# goal_state = grid[100][100]
-# ROWS = len(grid)
+start_state = (0,0)
+goal_state = (len(grid)-1, len(grid)-1)
+ROWS = len(grid)
 #
 # print('' + grid[0][0])
 
