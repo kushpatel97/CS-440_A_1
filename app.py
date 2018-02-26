@@ -16,8 +16,7 @@ HEIGHT = 10
 # This sets the margin between each cell
 MARGIN = 1
 
-ROWS = 50
-COLS = 50
+ROWS = 10
 
 # Create a 2 dimensional array. A two dimensional
 # array is simply a list of lists.
@@ -26,7 +25,7 @@ for row in range(ROWS):
     # Add an empty array that will hold each cell
     # in this row
     grid.append([])
-    for column in range(COLS):
+    for column in range(ROWS):
         grid[row].append(0)  # Append a cell
 
 # Set row 1, cell 5 to one. (Remember rows and
@@ -42,16 +41,18 @@ for row in range(ROWS):
 #################
 
 # Build Maze
-buildMaze(grid)
-setStart(grid)
-setGoal(grid)
-
+# buildMaze(grid
+dfs_Maze(grid)
+# setStart(grid)
+# setGoal(grid)
+grid[0][0] = 2
+grid[ROWS-1][ROWS-1] = 3
 # Initialize pygame
 pygame.init()
 
 # Set the HEIGHT and WIDTH of the screen
 # Display + the 1px margins
-WINDOW_SIZE = [551, 551]
+WINDOW_SIZE = [ROWS*11 + 1, ROWS*11 + 1]
 screen = pygame.display.set_mode(WINDOW_SIZE)
 
 # Set title of screen
@@ -85,18 +86,18 @@ while not done:
 
     # Draw the grid
     for row in range(ROWS):
-        for column in range(COLS):
+        for column in range(ROWS):
             color = WHITE
 
-            if grid[row][column] == -1:
+            if grid[row][column] == 1:
                 color = BLACK
             pygame.draw.rect(screen, color, [(MARGIN + WIDTH) * column + MARGIN,(MARGIN + HEIGHT) * row + MARGIN, WIDTH, HEIGHT])
 
-            if grid[row][column] == 1:
+            if grid[row][column] == 2:
                 color = RED
                 pygame.draw.rect(screen, color,
                                  [(MARGIN + WIDTH) * column + MARGIN, (MARGIN + HEIGHT) * row + MARGIN, WIDTH, HEIGHT])
-            if grid[row][column] == 2:
+            if grid[row][column] == 3:
                 color = GREEN
                 pygame.draw.rect(screen, color,
                                  [(MARGIN + WIDTH) * column + MARGIN, (MARGIN + HEIGHT) * row + MARGIN, WIDTH, HEIGHT])
