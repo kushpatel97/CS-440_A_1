@@ -2,34 +2,47 @@ from random import *
 from util import *
 from heapq import *
 import pygame
-import time
-from ForwardAStar import *
-from AdaptiveAStar import *
-from pygameHelper import *
+import timeit
+from AStar import *
+
 # COLORS GO HERE
 
 
 # DIMENSIONS GO HERE
 
-ROWS = 50
 
 # Create a 2 dimensional array. A two dimensional array is simply a list of lists.
-grid = generateGrid(ROWS)
-
 # Build Maze
+# # GENERATE START AND END STATE
+#
+#
+# UNCOMMENT HERE FOR IT TO WORK
+ROWS = 50
+grid = generateGrid(ROWS)
 buildMaze(grid)
-
-
-# GENERATE START AND END STATE
-xstart = randint(0,ROWS-1)
-ystart = randint(0,ROWS-1)
 grid[0][0] = 2
 start_state = (0, 0)
-
-xend = randint(0,len(grid)-1)
-yend = randint(0,len(grid)-1)
 grid[ROWS-1][ROWS-1] = -1
 goal_state = (ROWS-1, ROWS-1)
+
+
+
+
+#
+# text_file = open('numbers2.txt', 'r')
+# lines = text_file.readlines()
+# grid = []
+# for line in lines:
+#     line = line.strip().split(',')
+#     line = list(map(int, line))
+#     grid.append(line)
+#
+# print(grid)
+# start_state = grid[0][0]
+# goal_state = grid[100][100]
+# ROWS = len(grid)
+#
+# print('' + grid[0][0])
 
 # Initialize pygame
 pygame.init()
@@ -65,12 +78,13 @@ for row in range(ROWS):
 
 pygame.display.flip()
 
-regAstar = ForwardAStar(ROWS, screen, start_state, goal_state)
+# regAstar = AStar(ROWS, screen, start_state, goal_state)
 # regAstar.show_forwards_astar(grid)
-regAstar.show_backwards_astar(grid)
-
-print(regAstar.getCloseList())
-print(regAstar.getG())
+# regAstar.show_backwards_astar(grid)
+# regAstar.adaptive(grid)
+# print(regAstar.getCloseList())
+# print(regAstar.getG())
+# print('Distance: ' + str(len(regAstar.show_forwards_astar(grid))))
 # adaAStar = AdaptiveAStar(ROWS, grid, start_state, goal_state)
 
 # regAstar.setInitialGrid(grid)
@@ -97,8 +111,42 @@ while not done:
     for event in pygame.event.get():  # User did something
         if event.type == pygame.QUIT:  # If user clicked close
             done = True  # Flag that we are done so we exit this loop
+        elif event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_c:  # Clear obstacles on screen:
+                for row in range(ROWS):
+                    for column in range(ROWS):
+                        color = WHITE
+                        if grid[row][column] != 1:
+                            if grid[row][column] != 2:
+                                if grid[row][column] != -1:
+                                    color = WHITE
+                                    grid[row][column] = 0
+                                    pygame.draw.rect(screen, color,[(MARGIN + WIDTH) * column + MARGIN, (MARGIN + HEIGHT) * row + MARGIN,WIDTH, HEIGHT])
 
-    clock.tick(60)
+                pygame.display.flip()
+                time = 0
+                distancenum = 0
+                print('Path Cleared')
+            elif event.key == pygame.K_1:  # Forward A* Low G Value:
+                start = timeit.default_timer()
+                regAstar = AStar(ROWS, screen,start_state,goal_state)
+                regAstar.show_forwards_astar(grid)
+                stop = timeit.default_timer()
+                pygame.display.flip()
+                time = stop - start
+                distancenum = regAstar.distance
+                algtime = regAstar.time
+                print('Running Repeated Forward A* (Low G):', time, 'seconds',', distance: ', distancenum , ', algorithm time: ', algtime)
+            elif event.key == pygame.K_2:  # Backwards A* Low G value:
+                start = timeit.default_timer()
+                regAstar = AStar(ROWS, screen,start_state,goal_state)
+                regAstar.show_backwards_astar(grid)
+                stop = timeit.default_timer()
+                pygame.display.flip()
+                time = stop - start
+                distancenum = regAstar.distance
+                print('Running Repeated Backwards A* (Low G): ', time, 'seconds','distance: ', distancenum, 'algorithm time: ', algtime )
+
 
 
 

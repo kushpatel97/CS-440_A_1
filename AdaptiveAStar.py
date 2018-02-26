@@ -1,6 +1,6 @@
 from util import *
 from heapq import *
-from ForwardAStar import *
+from AStar import *
 import pygame
 
 
@@ -14,6 +14,7 @@ class AdaptiveAStar():
         self.screen = pygame.display.set_mode(((self.gridSize*11)+1,(self.gridSize*11)+1))
         self.adaptive_f = None
         self.h = None
+        self.distance = 0
 
 
 
