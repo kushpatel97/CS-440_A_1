@@ -46,14 +46,14 @@ class AStar:
             if current == self.goal_state:
                 total_path = []
 
-                while current in reversed(came_from):
+                while current in came_from:
                     pygame.draw.rect(self.screen, YELLOW,
                                      [(MARGIN + WIDTH) * current[1] + MARGIN, (MARGIN + HEIGHT) * current[0] + MARGIN,
                                       WIDTH, HEIGHT])
                     pygame.display.update()
                     total_path.append(current)
                     current = came_from[current]
-
+                self.distance = len(total_path)
                 return total_path
 
             close_set.add(current)
@@ -128,7 +128,7 @@ class AStar:
                     pygame.display.update()
                     total_path.append(current)
                     current = came_from[current]
-
+                self.distance = len(total_path)
                 return total_path
 
             close_set.add(current)
@@ -215,6 +215,7 @@ class AStar:
                     total_path.append(current)
                     current = came_from[current]
 
+                self.distance = len(total_path)
                 return total_path
 
             close_set.add(current)
