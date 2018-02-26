@@ -183,7 +183,7 @@ class AStar:
     def getCloseList(self):
         return self.cl
 
-    def adaptive(self, array):
+    def show_adaptive_astar(self, array):
         self.hiddenForwards(array)
         newfscore = self.getF()
         neighbors = [(0, 1), (0, -1), (1, 0), (-1, 0)]

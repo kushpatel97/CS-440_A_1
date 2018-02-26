@@ -2,7 +2,7 @@ from random import *
 from util import *
 from heapq import *
 import pygame
-import timeit
+import time, timeit
 from AStar import *
 
 # COLORS GO HERE
@@ -29,7 +29,7 @@ from AStar import *
 
 
 #
-text_file = open('numbers2.txt', 'r')
+text_file = open('worlds/world0.txt', 'r')
 lines = text_file.readlines()
 grid = []
 for line in lines:
@@ -54,7 +54,9 @@ done = False
 
 # Used to manage how fast the screen updates
 clock = pygame.time.Clock()
-
+time = 0
+distancenum = 0
+algtime = 0
 # CREATE VISUAL GRID, PLACE START, GOAL AND WALLS
 for row in range(ROWS):
     for column in range(ROWS):
@@ -146,8 +148,17 @@ while not done:
                 time = stop - start
                 distancenum = regAstar.distance
                 print('Running Repeated Backwards A* (Low G): ', time, 'seconds','distance: ', distancenum, 'algorithm time: ', algtime )
+            elif event.key == pygame.K_3:  # Adaptive A* Low G value:
+                start = timeit.default_timer()
+                regAstar = AStar(ROWS, screen,start_state,goal_state)
+                regAstar.show_adaptive_astar(grid)
+                stop = timeit.default_timer()
+                pygame.display.flip()
+                time = stop - start
+                distancenum = regAstar.distance
+                print('Running Adaptive A* (Low G): {}sec, Distance: {}, Time Taken: {}s'.format(time, distancenum, algtime))
 
-
+    pygame.display.flip()
 
 
 # Be IDLE friendly. If you forget this line, the program will 'hang'
