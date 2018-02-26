@@ -23,12 +23,12 @@ buildMaze(grid)
 # GENERATE START AND END STATE
 xstart = randint(0,ROWS-1)
 ystart = randint(0,ROWS-1)
-grid[0][0] = -1
+grid[0][0] = 2
 start_state = (0, 0)
 
 xend = randint(0,len(grid)-1)
 yend = randint(0,len(grid)-1)
-grid[ROWS-1][ROWS-1] = 2
+grid[ROWS-1][ROWS-1] = -1
 goal_state = (ROWS-1, ROWS-1)
 
 # Initialize pygame
@@ -66,7 +66,10 @@ for row in range(ROWS):
 pygame.display.flip()
 
 regAstar = ForwardAStar(ROWS, screen)
-regAstar.show_regular_astar(grid, start_state, goal_state)
+regAstar.show_forwards_astar(grid, start_state, goal_state)
+
+print(regAstar.getCloseList())
+print(regAstar.getG())
 # adaAStar = AdaptiveAStar(ROWS, grid, start_state, goal_state)
 
 # regAstar.setInitialGrid(grid)
