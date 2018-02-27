@@ -62,3 +62,7 @@ Time for each algorithm is displayed in console. (Note: time includes color shad
 Distance is also displayed in console, represents # of grid squares in optimal path (DOES NOT INCLUDE EVERY VISITED NODE)
 
 To generate more worlds run buildmap.py and it will overwrite older maps
+
+There is a research paper submitted in Latex formate with latex source code.
+
+Also, just incase if any information is missing on the latex formate, there is also a Word formate submitted.
