@@ -1,6 +1,5 @@
 from util import *
-# from heapq import *
-from heap import *
+from heapq import *
 import pygame
 
 
@@ -35,13 +34,13 @@ class AStar:
 
         fscore = {self.start_state: self.manhattanDistance(self.start_state, self.goal_state)}
 
-        oheap = []
+        open_set = []
 
-        push(oheap, (fscore[self.start_state], self.start_state))
+        heappush(open_set, (fscore[self.start_state], self.start_state))
 
-        while oheap:
-            # print(oheap)
-            current = pop(oheap)[1]
+        while open_set:
+            # print(open_set)
+            current = heappop(open_set)[1]
             # print(current)
             if current == self.goal_state:
                 total_path = []
@@ -79,10 +78,16 @@ class AStar:
                     # array bound x walls
                     continue
 
+                # this code is for tie breaking Higher G values
+                # if neighbor in close_set:
+                #     continue
+                #
+                # if tentative_g_score > gscore.get(neighbor, 0) or neighbor not in [i[1] for i in open_set]:
+
                 if neighbor in close_set and tentative_g_score >= gscore.get(neighbor, 0):
                     continue
 
-                if tentative_g_score < gscore.get(neighbor, 0) or neighbor not in [i[1] for i in oheap]:
+                if tentative_g_score < gscore.get(neighbor, 0) or neighbor not in [i[1] for i in open_set]:
 
                     self.g.add(tentative_g_score)
 
@@ -94,7 +99,7 @@ class AStar:
                                       WIDTH, HEIGHT])
                     pygame.display.update()
                     # print(neighbor)
-                    push(oheap, (fscore[neighbor], neighbor))
+                    heappush(open_set, (fscore[neighbor], neighbor))
             # print(AdaptiveFscore)
         print('Path not found: Visible Forwards A Star')
         return False
@@ -110,13 +115,13 @@ class AStar:
 
         fscore = {self.goal_state: self.manhattanDistance(self.goal_state, self.start_state)}
 
-        oheap = []
+        open_set = []
 
-        push(oheap, (fscore[self.goal_state], self.goal_state))
+        heappush(open_set, (fscore[self.goal_state], self.goal_state))
 
-        while oheap:
-            # print(oheap)
-            current = pop(oheap)[1]
+        while open_set:
+            # print(open_set)
+            current = heappop(open_set)[1]
             # print(current)
             if current == self.start_state:
                 total_path = []
@@ -152,10 +157,17 @@ class AStar:
                     # array bound x walls
                     continue
 
+
+                # this code is for tie breaking Higher G values
+                # if neighbor in close_set:
+                #     continue
+                #
+                # if tentative_g_score > gscore.get(neighbor, 0) or neighbor not in [i[1] for i in open_set]:
+
                 if neighbor in close_set and tentative_g_score >= gscore.get(neighbor, 0):
                     continue
 
-                if tentative_g_score < gscore.get(neighbor, 0) or neighbor not in [i[1] for i in oheap]:
+                if tentative_g_score < gscore.get(neighbor, 0) or neighbor not in [i[1] for i in open_set]:
                     self.g.add(tentative_g_score)
 
                     came_from[neighbor] = current
@@ -166,7 +178,7 @@ class AStar:
                                       WIDTH, HEIGHT])
                     pygame.display.update()
                     # print(neighbor)
-                    push(oheap, (fscore[neighbor], neighbor))
+                    heappush(open_set, (fscore[neighbor], neighbor))
             # print(AdaptiveFscore)
         print('Path not found: Visible Backwards A Star')
         return False
@@ -196,13 +208,13 @@ class AStar:
 
         fscore = newfscore
 
-        oheap = []
+        open_set = []
 
-        push(oheap, (fscore[self.start_state], self.start_state))
+        heappush(open_set, (fscore[self.start_state], self.start_state))
 
-        while oheap:
-            # print(oheap)
-            current = pop(oheap)[1]
+        while open_set:
+            # print(open_set)
+            current = heappop(open_set)[1]
             # print(current)
             if current == self.goal_state:
                 total_path = []
@@ -239,10 +251,17 @@ class AStar:
                     # array bound x walls
                     continue
 
+
+                # this code is for tie breaking Higher G values
+                # if neighbor in close_set:
+                #     continue
+                #
+                # if tentative_g_score > gscore.get(neighbor, 0) or neighbor not in [i[1] for i in open_set]:
+
                 if neighbor in close_set and tentative_g_score >= gscore.get(neighbor, 0):
                     continue
 
-                if tentative_g_score < gscore.get(neighbor, 0) or neighbor not in [i[1] for i in oheap]:
+                if tentative_g_score < gscore.get(neighbor, 0) or neighbor not in [i[1] for i in open_set]:
                     self.g.add(tentative_g_score)
 
                     came_from[neighbor] = current
@@ -253,7 +272,7 @@ class AStar:
                                       WIDTH, HEIGHT])
                     pygame.display.update()
                     # print(neighbor)
-                    push(oheap, (fscore[neighbor], neighbor))
+                    heappush(open_set, (fscore[neighbor], neighbor))
             # print(AdaptiveFscore)
         print('Path not found: Visible Forwards A Star')
         return False
@@ -269,13 +288,13 @@ class AStar:
 
         fscore = {self.start_state: self.manhattanDistance(self.start_state, self.goal_state)}
 
-        oheap = []
+        open_set = []
 
-        push(oheap, (fscore[self.start_state], self.start_state))
+        heappush(open_set, (fscore[self.start_state], self.start_state))
 
-        while oheap:
-            # print(oheap)
-            current = pop(oheap)[1]
+        while open_set:
+            # print(open_set)
+            current = heappop(open_set)[1]
             # print(current)
             if current == self.goal_state:
                 total_path = []
@@ -312,7 +331,7 @@ class AStar:
                 if neighbor in close_set and tentative_g_score >= gscore.get(neighbor, 0):
                     continue
 
-                if tentative_g_score < gscore.get(neighbor, 0) or neighbor not in [i[1] for i in oheap]:
+                if tentative_g_score < gscore.get(neighbor, 0) or neighbor not in [i[1] for i in open_set]:
 
                     self.g.add(tentative_g_score)
 
@@ -321,6 +340,6 @@ class AStar:
                     fscore[neighbor] = tentative_g_score + self.manhattanDistance(neighbor, self.goal_state)
                     # print(neighbor)
                     self.f = fscore
-                    push(oheap, (fscore[neighbor], neighbor))
+                    heappush(open_set, (fscore[neighbor], neighbor))
             # print(AdaptiveFscore)
         return False

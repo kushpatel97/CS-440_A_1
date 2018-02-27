@@ -1,35 +1,15 @@
-from random import *
-from util import *
-from heapq import *
 import pygame
 import time, timeit
 from AStar import *
 
-# COLORS GO HERE
 
 
-# DIMENSIONS GO HERE
+num = input('Enter a world from 0 to 49: \n')
+if int(num) > 49 or int(num) < 0:
+    raise ValueError('Out of Range')
+string = 'worlds/world' + str(num) + '.txt'
 
-
-# Create a 2 dimensional array. A two dimensional array is simply a list of lists.
-# Build Maze
-# # GENERATE START AND END STATE
-#
-#
-# UNCOMMENT HERE FOR IT TO WORK
-# ROWS = 50
-# grid = generateGrid(ROWS)
-# buildMaze(grid)
-# grid[0][0] = 2
-# start_state = (0, 0)
-# grid[ROWS-1][ROWS-1] = -1
-# goal_state = (ROWS-1, ROWS-1)
-
-
-
-
-#
-text_file = open('worlds/world0.txt', 'r')
+text_file = open(string, 'r')
 lines = text_file.readlines()
 grid = []
 for line in lines:
@@ -37,12 +17,10 @@ for line in lines:
     line = list(map(int, line))
     grid.append(line)
 
-# print(grid)
 start_state = (0,0)
 goal_state = (len(grid)-1, len(grid)-1)
 ROWS = len(grid)
-#
-# print('' + grid[0][0])
+
 
 # Initialize pygame
 pygame.init()
@@ -61,7 +39,6 @@ algtime = 0
 for row in range(ROWS):
     for column in range(ROWS):
         color = WHITE
-        # print(row)
         if grid[row][column] == 1:
             color = BLACK
         pygame.draw.rect(screen, color,
@@ -79,32 +56,6 @@ for row in range(ROWS):
                               HEIGHT])
 
 pygame.display.flip()
-
-# regAstar = AStar(ROWS, screen, start_state, goal_state)
-# regAstar.show_forwards_astar(grid)
-# regAstar.show_backwards_astar(grid)
-# regAstar.adaptive(grid)
-# print(regAstar.getCloseList())
-# print(regAstar.getG())
-# print('Distance: ' + str(len(regAstar.show_forwards_astar(grid))))
-# adaAStar = AdaptiveAStar(ROWS, grid, start_state, goal_state)
-
-# regAstar.setInitialGrid(grid)
-# adaAStar.setInitialGrid(grid)
-
-
-
-
-
-
-# regAstar.hidden_regular_astar(grid, start_state, goal_state)
-
-
-
-# adaAStar.show_adaptive_astar(grid, start_state, goal_state)
-
-# adaptive_Astar(grid, start_state, goal_state)
-
 
 # -------- Main Program Loop -----------
 
@@ -136,9 +87,7 @@ while not done:
                 stop = timeit.default_timer()
                 pygame.display.flip()
                 time = stop - start
-                distancenum = regAstar.distance
-                algtime = regAstar.time
-                print('Running Repeated Forward A* (Low G):', time, 'seconds',', distance: ', distancenum , ', algorithm time: ', algtime)
+                print('Running Repeated Forward A* (Low G): {}sec, Distance: {}, Time Taken: {}s'.format(time,regAstar.distance,regAstar.time))
             elif event.key == pygame.K_2:  # Backwards A* Low G value:
                 start = timeit.default_timer()
                 regAstar = AStar(ROWS, screen,start_state,goal_state)
@@ -146,8 +95,7 @@ while not done:
                 stop = timeit.default_timer()
                 pygame.display.flip()
                 time = stop - start
-                distancenum = regAstar.distance
-                print('Running Repeated Backwards A* (Low G): ', time, 'seconds','distance: ', distancenum, 'algorithm time: ', algtime )
+                print('Running Repeated Backwards A* (Low G): {}sec, Distance: {}, Time Taken: {}s'.format(time,regAstar.distance,regAstar.time))
             elif event.key == pygame.K_3:  # Adaptive A* Low G value:
                 start = timeit.default_timer()
                 regAstar = AStar(ROWS, screen,start_state,goal_state)
@@ -155,12 +103,10 @@ while not done:
                 stop = timeit.default_timer()
                 pygame.display.flip()
                 time = stop - start
-                distancenum = regAstar.distance
-                print('Running Adaptive A* (Low G): {}sec, Distance: {}, Time Taken: {}s'.format(time, distancenum, algtime))
+                print('Running Adaptive A* (Low G): {}sec, Distance: {}, Time Taken: {}s'.format(time,regAstar.distance,regAstar.time))
+
 
     pygame.display.flip()
 
 
-# Be IDLE friendly. If you forget this line, the program will 'hang'
-# on exit.
 pygame.quit()

@@ -4,56 +4,9 @@
     <list default="true" id="131eeb4d-ff1c-4715-a8ce-3fabef10d27f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/AStar.py" afterPath="$PROJECT_DIR$/AStar.py" />
-      <change beforePath="$PROJECT_DIR$/worlds/world0.txt" afterPath="$PROJECT_DIR$/worlds/world0.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world1.txt" afterPath="$PROJECT_DIR$/worlds/world1.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world10.txt" afterPath="$PROJECT_DIR$/worlds/world10.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world11.txt" afterPath="$PROJECT_DIR$/worlds/world11.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world12.txt" afterPath="$PROJECT_DIR$/worlds/world12.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world13.txt" afterPath="$PROJECT_DIR$/worlds/world13.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world14.txt" afterPath="$PROJECT_DIR$/worlds/world14.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world15.txt" afterPath="$PROJECT_DIR$/worlds/world15.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world16.txt" afterPath="$PROJECT_DIR$/worlds/world16.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world17.txt" afterPath="$PROJECT_DIR$/worlds/world17.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world18.txt" afterPath="$PROJECT_DIR$/worlds/world18.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world19.txt" afterPath="$PROJECT_DIR$/worlds/world19.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world2.txt" afterPath="$PROJECT_DIR$/worlds/world2.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world20.txt" afterPath="$PROJECT_DIR$/worlds/world20.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world21.txt" afterPath="$PROJECT_DIR$/worlds/world21.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world22.txt" afterPath="$PROJECT_DIR$/worlds/world22.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world23.txt" afterPath="$PROJECT_DIR$/worlds/world23.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world24.txt" afterPath="$PROJECT_DIR$/worlds/world24.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world25.txt" afterPath="$PROJECT_DIR$/worlds/world25.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world26.txt" afterPath="$PROJECT_DIR$/worlds/world26.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world27.txt" afterPath="$PROJECT_DIR$/worlds/world27.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world28.txt" afterPath="$PROJECT_DIR$/worlds/world28.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world29.txt" afterPath="$PROJECT_DIR$/worlds/world29.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world3.txt" afterPath="$PROJECT_DIR$/worlds/world3.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world30.txt" afterPath="$PROJECT_DIR$/worlds/world30.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world31.txt" afterPath="$PROJECT_DIR$/worlds/world31.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world32.txt" afterPath="$PROJECT_DIR$/worlds/world32.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world33.txt" afterPath="$PROJECT_DIR$/worlds/world33.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world34.txt" afterPath="$PROJECT_DIR$/worlds/world34.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world35.txt" afterPath="$PROJECT_DIR$/worlds/world35.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world36.txt" afterPath="$PROJECT_DIR$/worlds/world36.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world37.txt" afterPath="$PROJECT_DIR$/worlds/world37.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world38.txt" afterPath="$PROJECT_DIR$/worlds/world38.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world39.txt" afterPath="$PROJECT_DIR$/worlds/world39.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world4.txt" afterPath="$PROJECT_DIR$/worlds/world4.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world40.txt" afterPath="$PROJECT_DIR$/worlds/world40.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world41.txt" afterPath="$PROJECT_DIR$/worlds/world41.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world42.txt" afterPath="$PROJECT_DIR$/worlds/world42.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world43.txt" afterPath="$PROJECT_DIR$/worlds/world43.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world44.txt" afterPath="$PROJECT_DIR$/worlds/world44.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world45.txt" afterPath="$PROJECT_DIR$/worlds/world45.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world46.txt" afterPath="$PROJECT_DIR$/worlds/world46.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world47.txt" afterPath="$PROJECT_DIR$/worlds/world47.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world48.txt" afterPath="$PROJECT_DIR$/worlds/world48.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world49.txt" afterPath="$PROJECT_DIR$/worlds/world49.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world5.txt" afterPath="$PROJECT_DIR$/worlds/world5.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world6.txt" afterPath="$PROJECT_DIR$/worlds/world6.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world7.txt" afterPath="$PROJECT_DIR$/worlds/world7.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world8.txt" afterPath="$PROJECT_DIR$/worlds/world8.txt" />
-      <change beforePath="$PROJECT_DIR$/worlds/world9.txt" afterPath="$PROJECT_DIR$/worlds/world9.txt" />
+      <change beforePath="$PROJECT_DIR$/AdaptiveAStar.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pathfinder.py" afterPath="$PROJECT_DIR$/Pathfinder.py" />
+      <change beforePath="$PROJECT_DIR$/heap.py" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -67,62 +20,50 @@
       <file leaf-file-name="Pathfinder.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Pathfinder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1680">
-              <caret line="112" column="0" lean-forward="false" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+            <state relative-caret-position="-202">
+              <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
               <folding>
-                <element signature="e#0#20#0" expanded="true" />
+                <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#1713#4228#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="buildmap.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="buildmap.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/worlds/buildmap.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AStar.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/AStar.py">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
-              <caret line="26" column="41" lean-forward="false" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-                <element signature="e#605#3344#0" expanded="false" />
-                <element signature="e#3397#6125#0" expanded="false" />
-                <element signature="e#6358#9094#0" expanded="false" />
-                <element signature="e#9141#11262#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="heap.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/heap.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+              <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="util.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util.py">
+      <file leaf-file-name="Instructions.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Instructions.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="12" lean-forward="false" selection-start-line="33" selection-start-column="12" selection-end-line="36" selection-end-column="31" />
+            <state relative-caret-position="225">
+              <caret line="33" column="4" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AStar.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AStar.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="668">
+              <caret line="258" column="109" lean-forward="false" selection-start-line="258" selection-start-column="109" selection-end-line="258" selection-end-column="109" />
               <folding>
-                <element signature="e#0#20#0" expanded="true" />
-                <element signature="e#765#840#0" expanded="false" />
-                <element signature="e#866#941#0" expanded="false" />
+                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#145#440#0" expanded="false" />
+                <element signature="e#584#3624#0" expanded="false" />
+                <element signature="e#6737#6750#0" expanded="false" />
+                <element signature="e#6780#6793#0" expanded="false" />
+                <element signature="e#6823#6836#0" expanded="false" />
+                <element signature="e#6874#6888#0" expanded="false" />
+                <element signature="e#10025#12179#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -145,7 +86,9 @@
       <find>start</find>
       <find>heap</find>
       <find>i</find>
+      <find>push</find>
       <find>pop</find>
+      <find>oheap</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -165,14 +108,15 @@
         <option value="$PROJECT_DIR$/worlds/buildmap.py" />
         <option value="$PROJECT_DIR$/Pathfinder.py" />
         <option value="$PROJECT_DIR$/AStar.py" />
+        <option value="$PROJECT_DIR$/Instructions.txt" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1921" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1920" />
     <option name="y" value="23" />
-    <option name="width" value="1105" />
-    <option name="height" value="1166" />
+    <option name="width" value="1920" />
+    <option name="height" value="1103" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -330,14 +274,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1920" y="23" width="1920" height="1177" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1920" y="23" width="1920" height="1103" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13541667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13541667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20633484" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22114453" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -349,6 +291,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -357,7 +300,14 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/AStar.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -367,30 +317,75 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#20#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#1713#4228#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AdaptiveAStar.py">
+    <entry file="file://$PROJECT_DIR$/worlds/buildmap.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1575">
-          <caret line="108" column="45" lean-forward="false" selection-start-line="108" selection-start-column="45" selection-end-line="108" selection-end-column="45" />
+        <state relative-caret-position="405">
+          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AStar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="41" lean-forward="false" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
           <folding>
-            <element signature="e#0#18#0" expanded="false" />
-            <element signature="e#3177#3199#0" expanded="false" />
-            <element signature="e#3229#3242#0" expanded="false" />
-            <element signature="e#3309#5149#0" expanded="false" />
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#145#440#0" expanded="false" />
+            <element signature="e#584#3624#0" expanded="false" />
+            <element signature="e#6737#6750#0" expanded="false" />
+            <element signature="e#6780#6793#0" expanded="false" />
+            <element signature="e#6823#6836#0" expanded="false" />
+            <element signature="e#6874#6888#0" expanded="false" />
+            <element signature="e#10025#12179#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/heap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/util.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#20#0" expanded="false" />
+            <element signature="e#765#840#0" expanded="false" />
+            <element signature="e#866#941#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pathfinder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#1713#4228#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AdaptiveAStar.py" />
+    <entry file="file://$PROJECT_DIR$/util.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="17" column="10" lean-forward="false" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
           <folding>
-            <element signature="e#0#20#0" expanded="true" />
+            <element signature="e#0#20#0" expanded="false" />
             <element signature="e#765#840#0" expanded="false" />
             <element signature="e#866#941#0" expanded="false" />
           </folding>
@@ -403,10 +398,13 @@
           <caret line="41" column="53" lean-forward="false" selection-start-line="41" selection-start-column="53" selection-end-line="41" selection-end-column="53" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#605#3344#0" expanded="false" />
-            <element signature="e#3397#6125#0" expanded="false" />
-            <element signature="e#6358#9094#0" expanded="false" />
-            <element signature="e#9141#11262#0" expanded="false" />
+            <element signature="e#145#440#0" expanded="false" />
+            <element signature="e#584#3624#0" expanded="false" />
+            <element signature="e#6737#6750#0" expanded="false" />
+            <element signature="e#6780#6793#0" expanded="false" />
+            <element signature="e#6823#6836#0" expanded="false" />
+            <element signature="e#6874#6888#0" expanded="false" />
+            <element signature="e#10025#12179#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -416,7 +414,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#20#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#1713#4228#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -426,125 +425,51 @@
         <state relative-caret-position="300">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
-            <element signature="e#0#20#0" expanded="true" />
+            <element signature="e#0#20#0" expanded="false" />
             <element signature="e#765#840#0" expanded="false" />
             <element signature="e#866#941#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py" />
     <entry file="file://$PROJECT_DIR$/AStar.py" />
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py" />
     <entry file="file://$PROJECT_DIR$/util.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="19" lean-forward="false" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
           <folding>
-            <element signature="e#0#20#0" expanded="true" />
+            <element signature="e#0#20#0" expanded="false" />
             <element signature="e#765#840#0" expanded="false" />
             <element signature="e#866#941#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="110" column="25" lean-forward="true" selection-start-line="110" selection-start-column="25" selection-end-line="110" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py" />
     <entry file="file://$PROJECT_DIR$/util.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="19" lean-forward="false" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
           <folding>
-            <element signature="e#0#20#0" expanded="true" />
+            <element signature="e#0#20#0" expanded="false" />
             <element signature="e#765#840#0" expanded="false" />
             <element signature="e#866#941#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="53" column="44" lean-forward="false" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py" />
     <entry file="file://$PROJECT_DIR$/AStar.py" />
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="2" selection-end-line="46" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pygameHelper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="18" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AdaptiveAStar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#18#0" expanded="false" />
-            <element signature="e#3177#3199#0" expanded="false" />
-            <element signature="e#3229#3242#0" expanded="false" />
-            <element signature="e#3309#5149#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="12" lean-forward="false" selection-start-line="33" selection-start-column="12" selection-end-line="36" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-            <element signature="e#765#840#0" expanded="false" />
-            <element signature="e#866#941#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/numbers1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py" />
+    <entry file="file://$PROJECT_DIR$/pygameHelper.py" />
+    <entry file="file://$PROJECT_DIR$/AdaptiveAStar.py" />
+    <entry file="file://$PROJECT_DIR$/numbers1.txt" />
     <entry file="file://$PROJECT_DIR$/worlds/world3.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -552,7 +477,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -560,7 +484,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#20#0" expanded="false" />
+            <element signature="e#765#840#0" expanded="false" />
+            <element signature="e#866#941#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -572,37 +507,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/worlds/buildmap.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Pathfinder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1680">
-          <caret line="112" column="0" lean-forward="false" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+        <state relative-caret-position="-202">
+          <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
           <folding>
-            <element signature="e#0#20#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#1713#4228#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AStar.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="41" lean-forward="false" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+        <state relative-caret-position="668">
+          <caret line="258" column="109" lean-forward="false" selection-start-line="258" selection-start-column="109" selection-end-line="258" selection-end-column="109" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#605#3344#0" expanded="false" />
-            <element signature="e#3397#6125#0" expanded="false" />
-            <element signature="e#6358#9094#0" expanded="false" />
-            <element signature="e#9141#11262#0" expanded="false" />
+            <element signature="e#145#440#0" expanded="false" />
+            <element signature="e#584#3624#0" expanded="false" />
+            <element signature="e#6737#6750#0" expanded="false" />
+            <element signature="e#6780#6793#0" expanded="false" />
+            <element signature="e#6823#6836#0" expanded="false" />
+            <element signature="e#6874#6888#0" expanded="false" />
+            <element signature="e#10025#12179#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Instructions.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="33" column="4" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worlds/buildmap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
